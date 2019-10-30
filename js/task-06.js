@@ -13,15 +13,12 @@ do {
     if (input === '' || isNaN(input)) {
         message = userEror;
         alert(message);
-    } else numbers.push(input);
+    } else numbers.push(Number(input));
 
 } while (input !== null);
 
-for (let i = 0; i < numbers.length; i++) {
-    summUserInput = parseFloat(numbers[i]);
-    if (isNaN(summUserInput)) {
-        summUserInput = 0;
-    }
+for (let i = 0; i < numbers.length; i += 1) {
+    summUserInput = numbers[i];
     total += summUserInput;
 }
 

@@ -1,14 +1,10 @@
 'use strict';
 
 const checkForSpam = function (str) {
-    const searchSpam = '[spam]';
-    const searchSale = 'sale';
-    const string = str;
 
-    let strLower = string.toLowerCase();
-    let strArray = strLower.split(' ');
+    str = str.toLowerCase();
 
-    return strArray.includes(searchSpam) || strArray.includes(searchSale);
+    return str.includes('spam') || str.includes('sale');
 
 }
 
